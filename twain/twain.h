@@ -1986,6 +1986,7 @@ typedef struct {
 /****************************************************************************
  * Depreciated Items                                                        *
  ****************************************************************************/
+/* GG
 #if defined(WIN32) || defined(WIN64)
         #define TW_HUGE
 #elif !defined(TWH_CMP_GNU)
@@ -1997,6 +1998,7 @@ typedef struct {
 
 typedef BYTE TW_HUGE * HPBYTE;
 typedef void TW_HUGE * HPVOID;
+*/
 
 typedef unsigned char     TW_STR1024[1026],   FAR *pTW_STR1026, FAR *pTW_STR1024;
 typedef wchar_t           TW_UNI512[512],     FAR *pTW_UNI512;
@@ -2232,7 +2234,7 @@ typedef struct {
         #pragma pack (pop, before_twain)
     #endif
 #elif defined(TWH_CMP_BORLAND)
-    #pragma option –a.
+    #pragma option a.
 #endif
 
 #endif  /* TWAIN */
